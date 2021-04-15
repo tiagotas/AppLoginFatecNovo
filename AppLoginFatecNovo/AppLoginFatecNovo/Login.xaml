@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppLoginFatecNovo.Login"
+             BackgroundColor="Purple">
+
+    <ContentPage.Content>
+
+        <StackLayout Padding="10" VerticalOptions="CenterAndExpand">
+
+            <Frame CornerRadius="10" HasShadow="True" BorderColor="Black">
+                <StackLayout>
+
+                    <Label Text="Cliente Nubank" 
+                           FontSize="Large"
+                           HorizontalTextAlignment="Center"
+                           FontAttributes="Bold"
+                           Padding="25"/>
+
+                    <Label Text="Usuário" Style="{StaticResource lbl_login}" />
+                    <Entry x:Name="txt_usuario" />
+
+                    <Label Text="Senha" Style="{StaticResource lbl_login}" />
+                    <Entry x:Name="txt_senha" IsPassword="True" />
+
+                    <Button Text="Entrar" Clicked="Button_Clicked" />
+                </StackLayout>                
+            </Frame>
+            
+        </StackLayout>
+        
+        
+        
+    </ContentPage.Content>
+</ContentPage>
